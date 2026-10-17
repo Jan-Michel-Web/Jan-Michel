@@ -49,7 +49,7 @@
                     </div>
                 </div>
                 <div class="hero-portrait">
-                    <img src="assets/profile.jpg" alt="Portrait of Jan Michel" width="720" height="720">
+                    <img src="profile.jpg" alt="Portrait of Jan Michel" width="720" height="720">
                 </div>
             </div>
         </section>
@@ -197,8 +197,7 @@
 
                     <!-- Project 3: Logo & Visual Identity -->
                     <article class="project-card project-card-adobe">
-                        <div class="project-media project-media-adobe project-media-has-image">
-                            <img class="project-cover-image" src="assets/adobe-logo-sheet.webp" alt="Logo and emblem variations from a visual identity project for a local fishing association." width="715" height="1000" loading="lazy">
+                        <div class="project-media project-media-adobe">
                             <span class="project-number" aria-hidden="true">03</span>
                             <span class="media-label">Graphic Design · Visual Identity</span>
                         </div>
@@ -233,7 +232,11 @@
                                 with CAD tools and digital technical modeling.
                             </p>
                             <p class="project-tools"><strong>Tool:</strong> AutoCAD</p>
-                            <p class="project-note">A rendered preview of the model will be added here.</p>
+                            <button class="text-link project-modal-trigger" type="button"
+                                    data-open-modal="autocad-model-modal"
+                                    aria-haspopup="dialog" aria-controls="autocad-model-modal">
+                                View AutoCAD project <span aria-hidden="true">↗</span>
+                            </button>
                         </div>
                     </article>
                 </div>
@@ -325,22 +328,53 @@
             </p>
             <div class="project-modal-gallery">
                 <figure class="modal-gallery-item modal-gallery-item-logo">
-                    <img src="assets/adobe-logo-sheet.webp" alt="Logo and emblem variations in dark green, navy, black, and white." width="715" height="1000" loading="lazy">
+                    <img src="adobe-logo-sheet.webp" alt="Logo and emblem variations in dark green, navy, black, and white." width="715" height="1000" loading="lazy">
                     <figcaption>Logo &amp; emblem variations</figcaption>
                 </figure>
                 <figure class="modal-gallery-item">
-                    <img src="assets/adobe-auto.webp" alt="Vehicle mockup with the fishing association's visual identity applied to the vehicle." width="1200" height="800" loading="lazy">
+                    <img src="adobe-auto.webp" alt="Vehicle mockup with the fishing association's visual identity applied to the vehicle." width="1200" height="800" loading="lazy">
                     <figcaption>Vehicle branding</figcaption>
                 </figure>
                 <figure class="modal-gallery-item">
-                    <img src="assets/adobe-signage.webp" alt="Outdoor A-frame sign displaying the same visual identity." width="1100" height="825" loading="lazy">
+                    <img src="adobe-signage.webp" alt="Outdoor A-frame sign displaying the same visual identity." width="1100" height="825" loading="lazy">
                     <figcaption>Outdoor signage</figcaption>
                 </figure>
                 <figure class="modal-gallery-item">
-                    <img src="assets/adobe-mug.webp" alt="Takeaway cup mockup with the fishing association's emblem." width="1100" height="825" loading="lazy">
+                    <img src="adobe-mug.webp" alt="Takeaway cup mockup with the fishing association's emblem." width="1100" height="825" loading="lazy">
                     <figcaption>Product mockup</figcaption>
                 </figure>
             </div>
+        </div>
+    </dialog>
+
+
+
+    <!-- AutoCAD project dialog: provides the original drawing files for download. -->
+    <dialog class="project-modal" id="autocad-model-modal"
+            aria-labelledby="autocad-model-modal-title"
+            aria-describedby="autocad-model-modal-description">
+        <div class="project-modal-header">
+            <div>
+                <p class="eyebrow">3D MODELING · AUTOCAD</p>
+                <h2 id="autocad-model-modal-title">AutoCAD Model</h2>
+            </div>
+            <button class="project-modal-close" type="button" data-close-modal aria-label="Close AutoCAD project">&times;</button>
+        </div>
+        <div class="project-modal-body">
+            <p id="autocad-model-modal-description">
+                A 3D model of an iPhone 13 created in AutoCAD. The original CAD drawing is available
+                below, together with its backup file. Download the drawing to inspect the model in
+                AutoCAD or another compatible CAD application.
+            </p>
+            <div class="modal-downloads" aria-label="AutoCAD project files">
+                <a class="button button-primary" href="iphone13-model.dwg" download>
+                    Download drawing (.DWG) <span aria-hidden="true">↓</span>
+                </a>
+                <a class="button button-secondary" href="iphone13-model-backup.bak" download>
+                    Download backup (.BAK) <span aria-hidden="true">↓</span>
+                </a>
+            </div>
+            <p class="project-file-note">The DWG is the main project file. The BAK file is included as a backup copy.</p>
         </div>
     </dialog>
 

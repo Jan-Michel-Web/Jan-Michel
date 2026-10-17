@@ -898,6 +898,15 @@ button:focus-visible {
         gap: 13px;
     }
 
+    .modal-downloads {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .modal-downloads .button {
+        width: 100%;
+    }
+
     .modal-gallery-item img {
         height: auto;
         max-height: 360px;
@@ -1142,24 +1151,26 @@ button:focus-visible {
     }
 
     .header-inner {
-        min-height: 62px;
-        flex-direction: row;
-        align-items: center;
-        gap: 10px;
-        padding-block: 8px;
+        min-height: auto;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: flex-start;
+        gap: 8px;
+        padding-block: 11px 12px;
     }
 
     .brand {
         flex: 0 0 auto;
+        align-self: flex-start;
         font-size: 1.25rem;
         line-height: 1.2;
     }
 
     .main-nav {
         display: flex;
-        width: auto;
+        width: 100%;
         min-width: 0;
-        flex: 1 1 auto;
+        flex: 0 0 auto;
         align-items: center;
         justify-content: space-between;
         gap: clamp(4px, 1.5vw, 12px);
@@ -1188,19 +1199,52 @@ button:focus-visible {
 
     .hero-layout {
         display: flex;
-        flex-direction: column-reverse;
-        align-items: flex-start;
-        gap: 30px;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+    }
+
+    /* Let hero children participate in the mobile column so the portrait can sit right after the H1. */
+    .hero-content {
+        display: contents;
+    }
+
+    .hero-content > .eyebrow {
+        order: 1;
+    }
+
+    .hero-content > h1 {
+        order: 2;
+        margin-bottom: 13px;
     }
 
     .hero-portrait {
+        order: 3;
         width: 190px;
         align-self: center;
+        justify-self: auto;
+        margin: 6px 0 28px;
         padding: 6px;
     }
 
     .hero-portrait img {
         border-width: 3px;
+    }
+
+    .hero-content > h2 {
+        order: 4;
+    }
+
+    .hero-content > .hero-lead {
+        order: 5;
+    }
+
+    .hero-content > .hero-description {
+        order: 6;
+    }
+
+    .hero-content > .hero-actions {
+        order: 7;
     }
 
     .eyebrow {
@@ -1364,7 +1408,8 @@ button:focus-visible {
     }
 
     .header-inner {
-        gap: 6px;
+        gap: 7px;
+        padding-block: 10px 11px;
     }
 
     .brand {
@@ -1399,6 +1444,25 @@ button:focus-visible {
         gap: 6px;
         padding-block: 15px;
     }
+}
+
+/* Download links in the AutoCAD project dialog */
+.modal-downloads {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
+    margin: 8px 0 18px;
+}
+
+.modal-downloads .button {
+    gap: 8px;
+}
+
+.project-file-note {
+    margin-bottom: 0;
+    color: var(--text-faint);
+    font-size: 0.86rem;
 }
 
 /* Respect the visitor's motion preference. */
