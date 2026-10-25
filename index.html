@@ -138,34 +138,78 @@
             </div>
         </section>
 
-        <!-- PROJECTS: order requested by Jan -->
+        <!-- PROJECTS: selected work, ordered by relevance -->
         <section class="section" id="projects" aria-labelledby="projects-title">
             <div class="container">
                 <p class="eyebrow">SELECTED WORK</p>
                 <h2 class="section-title" id="projects-title">Projects</h2>
                 <p class="section-intro">
-                    Projects from my secondary-school education, creative work, and university studies.
+                    Selected projects from my university studies, secondary-school education, and creative work.
                 </p>
 
                 <div class="projects-grid">
-                    <!-- Project 1: Video -->
+                    <!-- Project 1: AI overreliance case study -->
+                    <article class="project-card">
+                        <div class="project-media project-media-ai">
+                            <span class="project-number" aria-hidden="true">01</span>
+                            <span class="media-label">Research · Problem-Solving</span>
+                        </div>
+                        <div class="project-body">
+                            <p class="project-type">VŠE · TEAM CASE STUDY</p>
+                            <h3>Student Overreliance on Artificial Intelligence</h3>
+                            <p>
+                                A team case study for the Problem Solving course at VŠE exploring when AI supports
+                                learning and when it risks replacing students' own thinking. The project draws on
+                                a questionnaire of 23 first-year FIS students and compares possible interventions.
+                            </p>
+                            <p class="project-tools"><strong>Methods:</strong> Questionnaire, Fishbone Diagram, 5 Whys, Risk Matrix</p>
+                            <button class="text-link project-modal-trigger" type="button"
+                                    data-open-modal="ai-case-study-modal"
+                                    aria-haspopup="dialog" aria-controls="ai-case-study-modal">
+                                View case study &amp; presentation <span aria-hidden="true">↗</span>
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- Project 2: Java text adventure -->
+                    <article class="project-card">
+                        <div class="project-media project-media-java">
+                            <span class="project-number" aria-hidden="true">02</span>
+                            <span class="media-label">Java · Object-Oriented Programming</span>
+                        </div>
+                        <div class="project-body">
+                            <p class="project-type">VŠE · JAVA PROGRAMMING</p>
+                            <h3>Last Exit — Text Adventure</h3>
+                            <p>
+                                A console-based text adventure set in an underground laboratory. Built with Java 17+,
+                                Maven, and JUnit 5, it features room exploration, item interactions, a 15-minute time
+                                limit, and save/load functionality.
+                            </p>
+                            <p class="project-tools"><strong>Technologies:</strong> Java, Maven, JUnit 5, File I/O</p>
+                            <a class="text-link" href="https://github.com/Jan-Michel-Web/last-exit" target="_blank" rel="noopener noreferrer">
+                                View source code on GitHub <span aria-hidden="true">↗</span>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Project 3: Virtual server tutorial -->
                     <article class="project-card">
                         <div class="project-media project-media-video">
-                            <span class="project-number" aria-hidden="true">01</span>
+                            <span class="project-number" aria-hidden="true">03</span>
                             <span class="media-label">IT Infrastructure · Networking</span>
                         </div>
                         <div class="project-body">
                             <p class="project-type">SECONDARY SCHOOL PROJECT</p>
-                            <h3>Virtual Server Setup & Network File Sharing</h3>
+                            <h3>Virtual Server Setup &amp; Network File Sharing</h3>
                             <p>
-                                A practical tutorial demonstrating how to create an Ubuntu virtual server
-                                in Oracle VirtualBox, configure NAT and Bridged networking, connect a
-                                computer to the server, and set up file sharing.
+                                A practical tutorial demonstrating how to create an Ubuntu virtual server in Oracle
+                                VirtualBox, configure NAT and Bridged networking, connect a computer to the server,
+                                and set up file sharing.
                             </p>
                             <p class="project-tools"><strong>Tools:</strong> Oracle VirtualBox, Ubuntu Linux</p>
                             <p>
-                                Created as an instructional video during my secondary-school studies.
-                                An English version is planned.
+                                Created as an instructional video during my secondary-school studies. An English
+                                version is planned.
                             </p>
                             <a class="text-link" href="https://www.youtube.com/watch?v=yagWkUPoXTc" target="_blank" rel="noopener noreferrer">
                                 Watch the original video <span aria-hidden="true">↗</span>
@@ -173,69 +217,25 @@
                         </div>
                     </article>
 
-                    <!-- Project 2: Case study -->
+                    <!-- Project 4: Creative work combines visual identity and CAD modeling -->
                     <article class="project-card">
-                        <div class="project-media project-media-ai">
-                            <span class="project-number" aria-hidden="true">02</span>
-                            <span class="media-label">Research · Problem-Solving</span>
-                        </div>
-                        <div class="project-body">
-                            <p class="project-type">VŠE · TEAM CASE STUDY</p>
-                            <h3>Student Overreliance on Artificial Intelligence</h3>
-                            <p>
-                                A team case study for the Problem Solving course at VŠE exploring how
-                                first-year students at the Faculty of Informatics and Statistics use AI,
-                                with a focus on potential overreliance on AI tools.
-                            </p>
-                            <p>
-                                The project is currently in progress. The research approach, findings,
-                                and recommendations will be added once the work is completed.
-                            </p>
-                            <span class="status-label">In progress</span>
-                        </div>
-                    </article>
-
-                    <!-- Project 3: Logo & Visual Identity -->
-                    <article class="project-card project-card-adobe">
-                        <div class="project-media project-media-adobe">
-                            <span class="project-number" aria-hidden="true">03</span>
-                            <span class="media-label">Graphic Design · Visual Identity</span>
-                        </div>
-                        <div class="project-body">
-                            <p class="project-type">CREATIVE WORK · ADOBE</p>
-                            <h3>Logo &amp; Visual Identity</h3>
-                            <p>
-                                A visual identity concept designed in Adobe Illustrator for a local fishing association.
-                                The project explores the emblem and its use across real-world applications, including
-                                vehicle branding, outdoor signage, and product mockups.
-                            </p>
-                            <p class="project-tools"><strong>Tools:</strong> Adobe Illustrator, Photoshop</p>
-                            <button class="text-link project-modal-trigger" type="button"
-                                    data-open-modal="visual-identity-modal"
-                                    aria-haspopup="dialog" aria-controls="visual-identity-modal">
-                                View project gallery <span aria-hidden="true">↗</span>
-                            </button>
-                        </div>
-                    </article>
-
-                    <!-- Project 4: AutoCAD -->
-                    <article class="project-card">
-                        <div class="project-media project-media-autocad">
+                        <div class="project-media project-media-creative">
                             <span class="project-number" aria-hidden="true">04</span>
-                            <span class="media-label">CAD · Technical Modeling</span>
+                            <span class="media-label">Digital Design · Technical Modeling</span>
                         </div>
                         <div class="project-body">
-                            <p class="project-type">3D MODELING</p>
-                            <h3>AutoCAD Model</h3>
+                            <p class="project-type">CREATIVE WORK</p>
+                            <h3>Creative Work — Visual Identity &amp; AutoCAD</h3>
                             <p>
-                                A 3D model of an iPhone 13 created in AutoCAD, demonstrating my experience
-                                with CAD tools and digital technical modeling.
+                                A selection of work combining visual communication and technical modeling: a visual
+                                identity designed in Adobe Illustrator for a local fishing association, alongside a
+                                3D iPhone 13 model created in AutoCAD.
                             </p>
-                            <p class="project-tools"><strong>Tool:</strong> AutoCAD</p>
+                            <p class="project-tools"><strong>Tools:</strong> Adobe Illustrator, Photoshop, AutoCAD</p>
                             <button class="text-link project-modal-trigger" type="button"
-                                    data-open-modal="autocad-model-modal"
-                                    aria-haspopup="dialog" aria-controls="autocad-model-modal">
-                                View AutoCAD project <span aria-hidden="true">↗</span>
+                                    data-open-modal="creative-work-modal"
+                                    aria-haspopup="dialog" aria-controls="creative-work-modal">
+                                View creative work <span aria-hidden="true">↗</span>
                             </button>
                         </div>
                     </article>
@@ -310,20 +310,84 @@
         </section>
     </main>
 
-    <!-- Project gallery dialog: opens over the current page and closes with the X or Escape. -->
-    <dialog class="project-modal" id="visual-identity-modal"
-            aria-labelledby="visual-identity-modal-title"
-            aria-describedby="visual-identity-modal-description">
+    <!-- Case study dialog -->
+    <dialog class="project-modal" id="ai-case-study-modal"
+            aria-labelledby="ai-case-study-modal-title"
+            aria-describedby="ai-case-study-modal-description">
+        <div class="project-modal-header">
+            <div>
+                <p class="eyebrow">VŠE FIS · TEAM CASE STUDY</p>
+                <h2 id="ai-case-study-modal-title">Student Overreliance on AI</h2>
+            </div>
+            <button class="project-modal-close" type="button" data-close-modal aria-label="Close case study">&times;</button>
+        </div>
+        <div class="project-modal-body">
+            <p id="ai-case-study-modal-description">
+                This case study explores how AI can support students' learning while also creating a risk that
+                it replaces their own attempts to solve problems. The project focuses on overreliance, not clinical addiction.
+            </p>
+
+            <div class="case-study-facts" aria-label="Selected questionnaire findings">
+                <div class="case-study-fact">
+                    <strong>16 of 23</strong>
+                    <span>respondents cited time savings and easier work</span>
+                </div>
+                <div class="case-study-fact">
+                    <strong>12 of 23</strong>
+                    <span>said AI sometimes supports learning and sometimes replaces their own work</span>
+                </div>
+                <div class="case-study-fact">
+                    <strong>9 of 23</strong>
+                    <span>reported not knowing where to start with a task</span>
+                </div>
+            </div>
+
+            <h3 class="modal-section-title">Approach</h3>
+            <p>
+                The team combined an anonymous questionnaire among first-year FIS students with external research.
+                The analysis used a Fishbone Diagram, 5 Whys, comparisons of solution options, and a risk matrix.
+            </p>
+
+            <h3 class="modal-section-title">Proposed direction: AI Study Smart</h3>
+            <p>
+                The recommended approach encourages students to <strong>Try → Hint → Solve → Verify</strong>:
+                attempt the task independently, request hints rather than a finished answer, solve it in their own
+                words, and verify the result. The proposal combines a short study guide, a practical workshop, and
+                assessment tasks that check independent understanding.
+            </p>
+            <p class="project-file-note">
+                The questionnaire included 23 respondents and was self-selected, so the results are exploratory and
+                should not be treated as representative of all FIS students. The original presentation is in Czech.
+            </p>
+            <div class="modal-downloads">
+                <a class="button button-primary" href="ai-overreliance-case-study-team-10.pptx" download>
+                    Download presentation (PPTX · Czech) <span aria-hidden="true">↓</span>
+                </a>
+            </div>
+        </div>
+    </dialog>
+
+    <!-- Combined creative-work dialog: Adobe visual identity plus AutoCAD model -->
+    <dialog class="project-modal" id="creative-work-modal"
+            aria-labelledby="creative-work-modal-title"
+            aria-describedby="creative-work-modal-description">
         <div class="project-modal-header">
             <div>
                 <p class="eyebrow">SELECTED CREATIVE WORK</p>
-                <h2 id="visual-identity-modal-title">Logo &amp; Visual Identity</h2>
+                <h2 id="creative-work-modal-title">Creative Work</h2>
             </div>
-            <button class="project-modal-close" type="button" data-close-modal aria-label="Close project gallery">&times;</button>
+            <button class="project-modal-close" type="button" data-close-modal aria-label="Close creative work">&times;</button>
         </div>
         <div class="project-modal-body">
-            <p id="visual-identity-modal-description">
-                A visual identity concept created in Adobe Illustrator, presented through the emblem and two product mockups: a takeaway cup and a paper bag.
+            <p id="creative-work-modal-description">
+                A combination of visual identity design and 3D technical modeling, showing different ways I use
+                digital tools to create both visual concepts and technical projects.
+            </p>
+
+            <h3 class="modal-section-title">Logo &amp; Visual Identity</h3>
+            <p>
+                A visual identity concept created in Adobe Illustrator for a local fishing association, presented
+                through the emblem and two product mockups.
             </p>
             <div class="project-modal-gallery">
                 <figure class="modal-gallery-item modal-gallery-item-logo">
@@ -339,27 +403,11 @@
                     <figcaption>Paper bag mockup</figcaption>
                 </figure>
             </div>
-        </div>
-    </dialog>
 
-
-
-    <!-- AutoCAD project dialog: provides the original drawing files for download. -->
-    <dialog class="project-modal" id="autocad-model-modal"
-            aria-labelledby="autocad-model-modal-title"
-            aria-describedby="autocad-model-modal-description">
-        <div class="project-modal-header">
-            <div>
-                <p class="eyebrow">3D MODELING · AUTOCAD</p>
-                <h2 id="autocad-model-modal-title">AutoCAD Model</h2>
-            </div>
-            <button class="project-modal-close" type="button" data-close-modal aria-label="Close AutoCAD project">&times;</button>
-        </div>
-        <div class="project-modal-body">
-            <p id="autocad-model-modal-description">
-                A 3D model of an iPhone 13 created in AutoCAD. The original CAD drawing is available
-                below, together with its backup file. Download the drawing to inspect the model in
-                AutoCAD or another compatible CAD application.
+            <h3 class="modal-section-title">AutoCAD Model — iPhone 13</h3>
+            <p>
+                A 3D model of an iPhone 13 created in AutoCAD. Download the original drawing to inspect the model
+                in AutoCAD or another compatible CAD application.
             </p>
             <div class="modal-downloads" aria-label="AutoCAD project files">
                 <a class="button button-primary" href="iphone13-model.dwg" download>
